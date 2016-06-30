@@ -6,4 +6,6 @@ class SendEmailJob < ActiveJob::Base
     @user = user
     ExampleMailer.sample_email(@user).deliver_later
   end
+
+
 end
